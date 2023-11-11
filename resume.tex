@@ -1,0 +1,96 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, total={17cm,25cm}]{geometry}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+%\usepackage{fancyhdr}
+%\setlength{\headheight}{15pt}
+\pagestyle{empty}
+%\fancyhead[L]{110-1 Bio-MEMS Fabrication Homework}
+%\fancyhead[R]{鄭泊聲 b07611002}
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage{multirow}
+\graphicspath{ {./images/} }
+%\usepackage[backend=biber, citestyle=numeric, bibstyle=numeric, sorting=none]{biblatex}
+%\addbibresource{ref.bib}
+\usepackage{mathspec}   %加這個就可以設定字體
+\usepackage{xeCJK}       %讓中英文字體分開設置
+\setCJKmainfont{Noto Serif CJK TC} %設定中文為系統上的字型
+\newCJKfontfamily[chineseSans]\CJKsans{Noto Sans CJK TC}
+\setmainfont{Sabon}
+\setsansfont{IBM Plex Sans}
+\setmonofont{Roboto Mono}
+\XeTeXlinebreaklocale "zh"             %這兩行一定要加，中文才能自動換行
+\XeTeXlinebreakskip = 0pt plus 1pt     %這兩行一定要加，中文才能自動換行
+\renewcommand{\baselinestretch}{1}
+\renewcommand{\figurename}{圖}
+\renewcommand{\tablename}{表}
+\renewcommand{\abstractname}{摘要}
+\renewcommand{\contentsname}{目錄}
+\renewcommand{\listtablename}{表格目錄}
+%\renewcommand*{\bibfont}{\footnotesize}
+\titleformat*{\section}{\Large }
+\titleformat*{\subsection}{\large }
+% \titleformat*{\subsubsection}{\CJKsans \bfseries}
+%\setcounter{tocdepth}{2}
+
+\begin{document}
+    \section*{Cheng Po Sheng | 鄭泊聲}
+    {
+    \sffamily \href{https://bencer3283.github.io}{\underline{bencer3283.github.io/}} 
+    \par \noindent Pursuing Bechalor of Science in \textbf{Bio-Mechatronics Engineering} and Bechalor of Arts in \textbf{Economics} at 
+    National Taiwan University (NTU), expected to graduate in Jun. 2023.
+    }
+    \section*{Experiences
+    % \footnote{\sffamily My coding experiences: Java for data structure, Matlab/R for statistics, C++/Kotlin for app development, Python for data processing on Raspberry Pi, Dart for UI, Labview for system integration and data visualization.}
+    }
+    % {\sffamily UI/UX, Econometrics, Machanics Design, Mechatronics, Electronics, Software Development. 
+    % }
+    %\begin{multicols*}{2}
+        \subsection*{Mechanical Engineering Intern, Logitech}
+        {\sffamily
+        \begin{itemize}
+            \item Feb. 2022 - Jun 2022.
+            \item Bringing electrical engineering skills to mechanical team to create new technology for keyboard. 
+            \item Involves ProE/Creo, R, SLA/3DP prototyping.
+        \end{itemize}
+        }
+        \subsection*{College Student Researcher, NTU}
+        {\sffamily
+        \begin{itemize}
+            \item Jul. 2021 - Feb. 2022.
+            \item Develope a novel spectral measurement and mapping system that integrates several components with LabVIEW. \href{https://bencer3283.github.io/experiences/collegeStudentResearch/}{\underline{Details linked here.}}
+            \item Also involves Flutter/Dart, UI/UX, C++, optics engineering, hyperspectral image processing.
+            \item The project won an Excellance Awards (NT20,000) at 2021 CCMS Innovative Techniques Competition.
+        \end{itemize}}
+        \subsection*{Self-directed project, Bio-Electromagnetics Labratory, NTU}
+        {\sffamily
+        \begin{itemize}
+            \item May 2020 - present
+            \item Design a IoT-connected machine to monitor the amount of bugs in farm fields with \href{https://bencer3283.github.io/experiences/Iot/}{\underline{self-designed controller board}} and mechanics.
+            \item Involves mechatronics, IoT (XBee), PCB design (Altium), Python, SolidWorks, microprocessor, Raspberry Pi, MySQL.
+        \end{itemize}
+        }
+        % \subsection*{Golden medalist (NT300,000), 19th Mobileheroes Award}
+        % {\sffamily
+        % \begin{itemize}
+        %     \item Category of 5G innovative application, awarded by Industrial Development Bureau.
+        %     \item Our team ARGO has developed a AR platform that utilize advanced image-based spacial recognition algorithm that enables complex AR experiences on personal mobile devices.
+        %     \item My main contribution are UI/UX evaluation and design of the AR world for demo.   
+        % \end{itemize}
+        % }
+        % \subsection*{Championship (NT10,000), 2021 National Thesis Competition for College Students}
+        % {\sffamily
+        % \begin{itemize}
+        %     \item "Covid-19's Impact on Online Video Streaming Platform from The Perspective of Consumer Preference"
+        %     \item Involves Matlab for statistics (Chi-square test for independence,
+        %     Logistic regression).
+        % \end{itemize}
+        % }        
+    %\end{multicols*}
+\end{document}
+

@@ -1,0 +1,125 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, total={18cm,27cm}]{geometry}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+%\usepackage{fancyhdr}
+%\setlength{\headheight}{15pt}
+%\pagestyle{empty}
+%\fancyhead[L]{110-1 Bio-MEMS Fabrication Homework}
+%\fancyhead[R]{鄭泊聲 b07611002}
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage{multirow}
+\graphicspath{ {./images/} }
+%\usepackage[backend=biber, citestyle=numeric, bibstyle=numeric, sorting=none]{biblatex}
+%\addbibresource{ref.bib}
+\usepackage{mathspec}   %加這個就可以設定字體
+\usepackage{xeCJK}       %讓中英文字體分開設置
+\setCJKmainfont{Noto Serif CJK TC} %設定中文為系統上的字型
+\newCJKfontfamily[chineseSans]\CJKsans{Noto Sans CJK TC}
+\setmainfont{Sabon}
+\setsansfont{Univers LT Std}%Univers LT Std 55}
+\setmonofont{Roboto Mono}
+\XeTeXlinebreaklocale "zh"             %這兩行一定要加，中文才能自動換行
+\XeTeXlinebreakskip = 0pt plus 1pt     %這兩行一定要加，中文才能自動換行
+\renewcommand{\baselinestretch}{1}
+\renewcommand{\figurename}{圖}
+\renewcommand{\tablename}{表}
+\renewcommand{\abstractname}{摘要}
+\renewcommand{\contentsname}{目錄}
+\renewcommand{\listtablename}{表格目錄}
+%\renewcommand*{\bibfont}{\footnotesize}
+\titleformat*{\section}{\Large \bfseries}
+\titleformat*{\subsection}{\large \sffamily}
+\titleformat*{\subsubsection}{\bfseries}
+%\setcounter{tocdepth}{2}
+
+\begin{document}
+\pagenumbering{gobble}
+    \section*{Curriculum Vitae of Po-Sheng Cheng} 
+    %\subsubsection*{for Design Science M.S., University of Michigan. (U-M ID: 91239502)}
+    %{
+    %\sffamily More details in personal website: \href{https://bencer3283.github.io}{\underline{bencer3283.github.io/}}}
+    %\section*{Education}
+    {\sffamily
+    National Taiwan University (NTU). Dual degree:
+    \begin{itemize}
+        \item Bechalor of Arts in Economics. Skills for data science, finance, macroeconomics.
+        \item Bechalor of Science in Bio-Mechatronics Engineering. Strong technical knowledge and understanding of industry trend.
+    \end{itemize}
+    IELTS: overall 8, listening 8.5, reading 8.5, writing 7, speaking 7.5
+    }
+    \section*{Awards}
+        \subsection*{Championship, 2021 National Thesis Competition for College Students}
+        {\sffamily
+        {\footnotesize Covid-19's Impact on Online Video Streaming Platform from The Perspective of Consumer Preference. \textbf{Po-Sheng Cheng}, Ming-Chieh Chang and Hsuan-Yu Chou. Apr. 2021. \href{https://bencer3283.github.io/experiences/covidthesis/}{\underline{link}}}
+        \begin{itemize}
+            \item Awarded NTD\$30,000.
+            \item I used a survey and regression analysis to understand how customer's preferences for online video streaming platform changed during the pandemic.
+            \item We showed a surprising results that customers didn't find those platforms more appealing despite the pandemic forcing them to use those platforms more.
+            This could partly explain the recent trumoil in the video streaming industry. 
+        \end{itemize}
+        }
+        \subsection*{Golden Medalist, 19th Mobileheroes Award}
+        {\sffamily
+        \begin{itemize}
+            \item Dec. 2020, Category of 5G innovative application, awarded NTD\$300,000 by Industrial Development Bureau of Taiwan.
+            \item Our team \href{https://bencer3283.github.io/experiences/5G/}{\underline{ARGO}} developed an AR platform that utilizes advanced image-based spatial recognition algorithm.   
+        \end{itemize}
+        }
+    \section*{Experiences
+    % \footnote{\sffamily My coding experiences: Java for data structure, Matlab/R for statistics, C++/Kotlin for app development, Python for data processing on Raspberry Pi, Dart for UI, Labview for system integration and data visualization.}
+    }
+    % {\sffamily UI/UX, Econometrics, Machanics Design, Mechatronics, Electronics, Software Development. 
+    % }
+    %\begin{multicols*}{2}
+        \subsection*{Electromechanical Engineering Intern, Logitech}
+        {\sffamily
+        \begin{itemize}
+            \item Feb. - Jun. 2022
+            \item I proposed an innovative keyboard switch, then conducted a UX survey with 50 interviewees to understand its target audience and lastly designed three working prototype to demonstrate the technology.
+            \item Besides statistics with R for the UX survey, my engineering capabilities including modeling with Creo, SLA/3DP prototyping, electromagnet and microcontroller circuits design and stepper motor control were involved.
+        \end{itemize}
+        }
+        \subsection*{College Student Researcher, NTU}
+        {\sffamily
+        
+        \begin{itemize}
+            \item Jul. 2021 - Feb. 2022. A self-managed research project funded by Natinoal Science and Technology Council.
+            \item I developed a novel spectral mapping system named HSI that integrates several electrical/optical components with LabVIEW software development environment. %\newline \href{https://bencer3283.github.io/experiences/collegeStudentResearch/}{\underline{Details linked here.}}
+            % \item I won the following awards with this project: 
+            % \begin{itemize}
+            %     \item \textbf{2021 Technology Innovation Award} by CCMS, NTU (NTD\$20,000)
+            %     \item \textbf{College Student Research Creativity Award} by National Science and Technology Council of Taiwan (NTD\$20,000)
+            % \end{itemize}
+        \end{itemize}}
+        % \subsection*{Self-directed project, Bio-Electromagnetics Laboratory, NTU}
+        % {\sffamily
+        % Electrical system integration, mechanics design
+        % \begin{itemize}
+        %     \item May. 2020 - Jul. 2022
+        %     \item I designed a IoT machine to monitor the amount of bugs in farm fields with inhouse-designed controller board and mechanics.
+        %     \item Technical aspect involved mechatronics, IoT with Arduino (XBee), PCB design (Altium), Python, SolidWorks, Raspberry Pi, MySQL.
+        % \end{itemize}
+        % }
+        % \section*{Publication}
+        % \subsection*{TeleSHift: Telexisting TUI for Physical Collaboration \& Interaction}
+        % {\sffamily
+        % {\footnotesize (forthcoming) Andrew Chen, Tzu-Ling Yang, Shu-Yan Cheng, \textbf{Po-Sheng Cheng}, Tzu-Han Lin, and Kaiyuan Lin. 2022. In Proceedings of the 2022 ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp/ISWC '22 Adjunct)%, September 11-15, 2022, Cambridge, United Kingdom. ACM, New York, NY, USA, 4 pages. 
+        % , https://doi.org/10.48550/arXiv.2209.08362}
+        % %\vspace*{4pt} \newline Human computer interaction
+        % \begin{itemize}
+        %     \item Apr. - Sep. 2022
+        %     \item This work recieved the \textbf{Best Demo at Ubicomp/ISWC 2022}.
+        %     \item In this work, a 3D tangible user interface (TUI) with telexisting communication framework for group-based collaboration is presented.
+        %     \item I laid out the system architecture of the presented prototype in this work with ESP32 microcontroller, potentiometers, DC motors, etc. I also implemented the mechanical design and power supply circuit of the prototype.
+        %     \item Additionally, my design for manufacturing improvements helped reducing assembling time of the prototype to only 1/5.
+        % \end{itemize}
+        % }
+        
+\end{document}
+

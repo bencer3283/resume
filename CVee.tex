@@ -1,0 +1,114 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, total={18cm,26cm}]{geometry}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+%\usepackage{fancyhdr}
+%\setlength{\headheight}{15pt}
+%\pagestyle{empty}
+%\fancyhead[L]{110-1 Bio-MEMS Fabrication Homework}
+%\fancyhead[R]{鄭泊聲 b07611002}
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage{multirow}
+\graphicspath{ {./images/} }
+%\usepackage[backend=biber, citestyle=numeric, bibstyle=numeric, sorting=none]{biblatex}
+%\addbibresource{ref.bib}
+\usepackage{mathspec}   %加這個就可以設定字體
+\usepackage{xeCJK}       %讓中英文字體分開設置
+\setCJKmainfont{Noto Serif CJK TC} %設定中文為系統上的字型
+\newCJKfontfamily[chineseSans]\CJKsans{Noto Sans CJK TC}
+\setmainfont{Sabon}
+\setsansfont{Univers LT Std}%Univers LT Std 55}
+\setmonofont{Roboto Mono}
+\XeTeXlinebreaklocale "zh"             %這兩行一定要加，中文才能自動換行
+\XeTeXlinebreakskip = 0pt plus 1pt     %這兩行一定要加，中文才能自動換行
+\renewcommand{\baselinestretch}{1}
+\renewcommand{\figurename}{圖}
+\renewcommand{\tablename}{表}
+\renewcommand{\abstractname}{摘要}
+\renewcommand{\contentsname}{目錄}
+\renewcommand{\listtablename}{表格目錄}
+%\renewcommand*{\bibfont}{\footnotesize}
+\titleformat*{\section}{\Large \bfseries}
+\titleformat*{\subsection}{\large \sffamily}
+\titleformat*{\subsubsection}{\bfseries}
+%\setcounter{tocdepth}{2}
+
+\begin{document}
+\pagenumbering{gobble}
+    \section*{Po-Sheng Cheng 鄭泊聲} 
+    %\subsubsection*{for Design Science M.S., University of Michigan. (U-M ID: 91239502)}
+    %{
+    %\sffamily More details in personal website: \href{https://bencer3283.github.io}{\underline{bencer3283.github.io/}}}
+    %\section*{Education}
+    \subsection*{National Taiwan University}
+    {\sffamily
+    Pursuing Master of Science, Graduate Insitute of Biomedical Electronics and Bioinformatics, College of EECS. \newline
+    Acquired Bechalor of Science in Bio-Mechatronics Engineering.
+    }
+    \section*{Publication}
+        \subsection*{TeleSHift: Telexisting TUI for Physical Collaboration \& Interaction}
+        {\sffamily
+        {\footnotesize 2022. In ACM UbiComp/ISWC '22 Adjunct%, September 11-15, 2022, Cambridge, United Kingdom. ACM, New York, NY, USA, 4 pages. 
+        , https://doi.org/10.48550/arXiv.2209.08362}
+        %\vspace*{4pt} \newline Human computer interaction
+        \begin{itemize}
+            \item This work recieved the \textbf{Best Demo at Ubicomp/ISWC 2022}.
+            \item I laid out the system architecture of the presented prototype in this work with ESP32 microcontroller, potentiometers, DC motors, etc. I also implemented the power supply circuits and mechanical design of the prototype.
+            %\item Additionally, my design for manufacturing improvements helped reducing assembling time of the prototype to only 1/5.
+        \end{itemize}
+        }
+    \section*{Experiences
+    % \footnote{\sffamily My coding experiences: Java for data structure, Matlab/R for statistics, C++/Kotlin for app development, Python for data processing on Raspberry Pi, Dart for UI, Labview for system integration and data visualization.}
+    }
+    % {\sffamily UI/UX, Econometrics, Machanics Design, Mechatronics, Electronics, Software Development. 
+    % }
+    %\begin{multicols*}{2}
+        \subsection*{Electro-mechanical Engineering Intern, Logitech}
+        {\sffamily
+        \begin{itemize}
+            \item Feb. - Jun. 2022
+            \item I proposed an innovative keyboard switch and designed three working prototypes to demonstrate the technology involving electromagnet design, microcontroller circuits design and stepper motor control.
+        \end{itemize}
+        }
+        \subsection*{College Student Researcher, NTU}
+        {\sffamily
+        \begin{itemize}
+            \item Jul. 2021 - Feb. 2022. A self-managed research project funded by Natinoal Science and Technology Council.
+            \item I developed a novel spectral mapping system that integrates several electrical/optical components like imaging sensors and motorized stages with LabVIEW and C++. %\newline \href{https://bencer3283.github.io/experiences/collegeStudentResearch/}{\underline{Details linked here.}}
+            \item By researching the readout sequence of the EMCCD and optimizing the algorithm, I reduced the scanning time by 26\%.
+            \item I won the \textbf{2021 Technology Innovation Award} by CCMS, NTU and \textbf{College Student Research Creativity Award} by National Science and Technology Council of Taiwan.
+        \end{itemize}}
+        \subsection*{Project Lead, Bio-Electromagnetics Laboratory, NTU}
+        {\sffamily
+        \begin{itemize}
+            \item May. 2020 - Jul. 2022
+            \item I designed an IoT machine to monitor the amount of bugs in farm fields with inhouse-designed controller board and mechanics.
+            \item Technical aspect involved automatic control, IoT with Arduino (XBee), PCB design (Altium), Python, SolidWorks, Raspberry Pi, MySQL.
+        \end{itemize}
+        }
+        % \section*{Competitions}
+        % \subsection*{Championship, 2021 National Thesis Competition for College Students}
+        % {\sffamily
+        % {\footnotesize Covid-19's Impact on Online Video Streaming Platform from The Perspective of Consumer Preference. \textbf{Po-Sheng Cheng}, Ming-Chieh Chang, Hsuan-Yu Chou and others.}
+        % \begin{itemize}
+        %     \item Feb. - Apr. 2021
+        %     \item Awarded USD\$1000.
+        %     \item I used my econometrics skills(Chi-square test for independence, Logistic regression) to understand the relationship between customer's context and preferences.
+        % \end{itemize}
+        % }
+        % \subsection*{Golden Medalist, 19th Mobileheroes Award}
+        % {\sffamily
+        % UI evaluation
+        % \begin{itemize}
+        %     \item Sep. - Dec. 2020
+        %     \item Category of 5G innovative application, awarded USD\$10000 by Industrial Development Bureau of Taiwan.
+        %     \item Our team ARGO has developed a AR platform that utilizes advanced image-based spatial recognition algorithm which enables real-time AR interactions on personal mobile devices. My main contribution was UI evaluation and design of the AR world for demo.   
+        % \end{itemize}
+        % }
+\end{document}
+
