@@ -1,48 +1,42 @@
-\documentclass[compress]{beamer}
-\usepackage{multicol}
-%\usetheme{Antibes}
-\useoutertheme[footline=authortitle, subsection=true]{miniframes}
-\useinnertheme{circles}
-\usecolortheme{spruce}
-\usefonttheme{structurebold}
+\documentclass[compress, aspectratio=32]{beamer}
 \usepackage[utf8]{inputenc}
-%\usepackage{titlesec}
+\usepackage{graphicx} % Required for inserting images
+\graphicspath{ {./images/} }
 \usepackage{amsmath}
 \usepackage{mathspec}
-%\setcounter{section}{2}
-\setcounter{tocdepth}{1}
-\usepackage{graphicx}
+\usepackage{xeCJK}
+\usepackage{multicol}
+\usepackage{float}
 \usepackage{soul}
 \usepackage{hyperref}
-%\usepackage[justification=centering]{caption}
-\graphicspath{ {./images/} }
-%\usepackage[backend=biber, citestyle=numeric-comp, bibstyle=numeric, sorting=none]{biblatex}
-%\addbibresource{ref.bib}
-%\usepackage{fontspec}   %加這個就可以設定字體
-\usepackage{xeCJK}       %讓中英文字體分開設置
-\setCJKmainfont{Noto Sans CJK TC} %設定中文為系統上的字型
-%\newCJKfontfamily[chinesexSerif]\CJKserif{Noto Serif CJK TC}
-\setmainfont{Sabon}
-\setsansfont{IBM Plex Sans}
-\setmathfont(Digits,Latin){Goldman Sans}
-\setmonofont{Roboto Mono}
-\XeTeXlinebreaklocale "zh"             %這兩行一定要加，中文才能自動換行
-\XeTeXlinebreakskip = 0pt plus 1pt     %這兩行一定要加，中文才能自動換行
-\renewcommand{\baselinestretch}{1.2}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{ulem}
 
-\title{Cheng Po Sheng: A self introduction}
-\author{鄭泊聲}
-\institute{}
-\date{\today}
+\useinnertheme{circles}
+\useoutertheme[subsection=false, footline=authortitle]{miniframes}
+%\usecolortheme{seagull}
+\usefonttheme{structurebold}
+
+\setmainfont{Sabon LT Pro}
+\setsansfont{SF Pro Display}
+%\setmathfont(Digits,Latin){Goldman Sans}
+%\setmonofont{Roboto Mono}
+
+% \AtBeginSection[]
+% {
+    
+%   \begin{frame}[allowframebreaks]
+    
+%     \tableofcontents[currentsection]
+    
+%   \end{frame}
+% }
 
 \AtBeginSection[]
 {
     
-  \begin{frame}[allowframebreaks]
-    
-    \tableofcontents[currentsection]
-    
-  \end{frame}
+  \frame{\sectionpage}
 }
 
 % \AtBeginSubsection[]{
@@ -51,18 +45,79 @@
 %     \end{frame}
 % }
 
+
+\setbeamertemplate{navigation symbols}{\insertframenumber/\inserttotalframenumber}
+\setbeamertemplate{title page}{
+    \vbox{}
+    \vfill
+    \begin{beamercolorbox}[sep=8pt,left]{title}
+        \usebeamerfont{title}\inserttitle\par
+        \ifx\insertsubtitle\@empty
+        \else
+          \vskip0.25em
+          {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}%
+        \fi     
+      \end{beamercolorbox}
+    \vskip1em\par
+    \begin{beamercolorbox}[sep=8pt,left]{author}
+      \usebeamerfont{author}\insertauthor
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[sep=8pt,left]{institute}
+        \usebeamerfont{institute}\insertinstitute
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[sep=8pt,right]{date}
+        \usebeamerfont{date}\insertdate
+    \end{beamercolorbox}\vskip0.5em
+    {\usebeamercolor[fg]{titlegraphic}\inserttitlegraphic\par}
+    \vfill
+}
+
+\definecolor{customColor}{RGB}{163,163,163}
+\setbeamercolor*{palette primary}{fg=customColor!60!black,bg=white!85!customColor}
+\setbeamercolor*{palette secondary}{fg=customColor!70!black,bg=white!60!customColor}
+\setbeamercolor*{palette tertiary}{bg=customColor!80!black,fg=white!50!customColor}
+\setbeamercolor*{palette quaternary}{fg=customColor,bg=white!20!customColor}
+
+\setbeamercolor*{sidebar}{fg=customColor,bg=customColor!75!white}
+
+\setbeamercolor*{palette sidebar primary}{fg=customColor!10!black}
+\setbeamercolor*{palette sidebar secondary}{fg=white}
+\setbeamercolor*{palette sidebar tertiary}{fg=customColor!50!black}
+\setbeamercolor*{palette sidebar quaternary}{fg=white!10!customColor}
+
+\setbeamercolor*{titlelike}{parent=palette primary}
+\setbeamercolor{frametitle}{bg=white!90!customColor}
+\setbeamercolor{frametitle right}{bg=white!60!customColor}
+
+\setbeamercolor{block title}{parent=palette tertiary}
+\setbeamercolor{block body}{bg=white!90!customColor}
+
+\setbeamercolor*{item projected}{parent=palette primary}%fg=black,bg=black!20}
+
+\setbeamercolor*{normal text}{fg=black,bg=white}
+\setbeamercolor*{alerted text}{fg=black}
+\setbeamercolor*{example text}{fg=black}
+\setbeamercolor*{structure}{fg=black}
+
+\setbeamercolor{author in head/foot}{parent=title in head/foot}
+
+\title{Ben Cheng: A Self Introduction}
+\author{Po-Sheng Cheng}
+\institute{RISD MID}
+\date{\today}
+
 \begin{document}
 
 \begin{frame}
     \titlepage
 \end{frame}
 
-\begin{frame}[allowframebreaks]{Outline}
-    \tableofcontents
-\end{frame}
+% \begin{frame}[allowframebreaks]{Outline}
+%     \tableofcontents
+% \end{frame}
 
 \begin{frame}
-    \frametitle{Ben Cheng 鄭泊聲}
+    \frametitle{Ben Cheng}
     \begin{columns}
         \begin{column}{0.5\linewidth}
             \begin{itemize}
@@ -80,28 +135,31 @@
 \section{Education}
 \begin{frame}
     \frametitle{Education}
-    National Taiwan University. Pursuing BSc/BA of
     \begin{itemize}
-        \item Bio-Mechatronics Engineering
-        \item Economics
+        \item National Taiwan University
+    \begin{itemize}
+        \item BSc Bio-Mechatronics Engineering
+        \item BA Economics
     \end{itemize}
-    in a double major program.
-
-    Expected to graduate in JUN. 2023.
+    \item Master of Industrial Design, Rhode Island School of Design. \begin{itemize}
+        \item expected Jun. 2026
+    \end{itemize} 
+    \end{itemize}
+    
+    
 \end{frame}
 
 \begin{frame}
-    \frametitle{EE related course}
+    \frametitle{ECE course}
     \begin{itemize}
-        \item Electrical, Eletronics Engineering
+        \item Electrical, Electronics Engineering
         \item Engineering Mathematics
               \begin{itemize}
                   \item ODE, linear algebra, fourier transform, PDE
               \end{itemize}
+        \item Computer Programming Language
+        \item Operating System
         \item Pratical Data Structures and Algorithms
-              \begin{itemize}
-                  \item in Java
-              \end{itemize}
         \item Mechatronics I-IV
               \begin{itemize}
                   \item embedded microprocessor, signal conditioning, digital circuits, system integration
@@ -111,11 +169,12 @@
               \begin{itemize}
                   \item fuzzy control, genetic algorithm, neural network
               \end{itemize}
+        \item Reinforcement Learning
     \end{itemize}
 \end{frame}
 
 \begin{frame}
-    \frametitle{ME related course}
+    \frametitle{ME course}
     \begin{multicols}{2}
         \begin{itemize}
             \item Applied Mechanics I, II
@@ -130,6 +189,39 @@
             \item Power Machinery
             \item Actuators
             \item Automatic Control
+        \end{itemize}
+    \end{multicols}
+\end{frame}
+
+\begin{frame}
+    \frametitle{ECON course}
+    \begin{multicols}{2}
+        \begin{itemize}
+            \item Micro
+            \begin{itemize}
+                \item Micro Economics I, II
+                \item Game Theory
+            \end{itemize}
+            \item Macro
+            \begin{itemize}
+                \item Macro Economics I, II
+                \item International Finance
+                \item Trade Policy
+                \item Banking and Monetary Policy
+            \end{itemize}
+            \item Statistics
+            \begin{itemize}
+                \item Introductory Statistics
+                \item Introductory Econometrics
+                \item Econometrics I
+                \item Mathematics for Economics
+            \end{itemize}
+            \item Finance
+            \begin{itemize}
+                \item Accounting I
+                \item Financial Derivatives
+                \item Investment
+            \end{itemize}
         \end{itemize}
     \end{multicols}
 \end{frame}
@@ -230,9 +322,42 @@
 
 
 
-\section{Personalities}
-\subsection{Curiosity with breadth and depth}
-\subsection{A self-directed learner}
-\subsection{A good listener}
+\section{Strength \& Goals}
+\begin{frame}
+    \frametitle{NPI}
+    % \begin{columns}
+    %     \begin{column}{0.25\linewidth}
+            \begin{itemize}
+                \item Bring it to life
+                \item Make or break?
+                     Feasibility,
+                     viability,
+                     desirability,
+            \end{itemize}
+        % \end{column}
+        % \begin{column}{0.75\linewidth}
+            \begin{figure}
+        \centering
+        \includegraphics[width=0.8\textwidth]{npi.jpg}
+        \caption{(TCGen, 2023)}
+    \end{figure}
+    %     \end{column}
+    % \end{columns}
+    
+\end{frame}
+
+\begin{frame}
+    \frametitle{Good at everything. Good at nothing.}
+    \begin{itemize}
+        \item Design + Engineering Prototyping
+        \begin{itemize}
+            \item CAD + 3D Printing
+            \item Industrial Automation + Mechanics
+            \item Embedded Computing + Circuits
+            \item Software Development
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
 
 \end{document}
