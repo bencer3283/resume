@@ -21,12 +21,12 @@
 \usepackage{xeCJK}       %讓中英文字體分開設置
 % \setCJKmainfont{Noto Serif CJK TC} %設定中文為系統上的字型
 % \newCJKfontfamily[chineseSans]\CJKsans{Noto Sans CJK TC}
-\setmainfont{Sabon LT Pro}
+\setmainfont{Sabon LT Pro} 
 \setsansfont{SF Pro Text}%Univers LT Std 55}
 % \setmonofont{Roboto Mono}
 % \XeTeXlinebreaklocale "zh"             %這兩行一定要加，中文才能自動換行
 % \XeTeXlinebreakskip = 0pt plus 1pt     %這兩行一定要加，中文才能自動換行
-% \renewcommand{\baselinestretch}{1}
+\renewcommand{\baselinestretch}{0.9}
 % \renewcommand{\figurename}{圖}
 % \renewcommand{\tablename}{表}
 % \renewcommand{\abstractname}{摘要}
@@ -34,7 +34,7 @@
 % \renewcommand{\listtablename}{表格目錄}
 %\renewcommand*{\bibfont}{\footnotesize}
 \titleformat*{\section}{\Large \bfseries}
-\titleformat*{\subsection}{\large \sffamily}
+\titleformat*{\subsection}{}%\large \sffamily}
 \titleformat*{\subsubsection}{\bfseries}
 %\setcounter{tocdepth}{2}
 
@@ -44,24 +44,45 @@
     \href{https://bencer3283.github.io/art/}{\underline{Online Portfolio Link}}
     
     \columnbreak
-    {\sffamily \noindent
+    {\sffamily \small \noindent
     %\Pursuing Master of Science in Graduate Insitute of Biomedical Electronics and Bioinformatics, College of EECS. \newline
     Master of Industrial Design, Rhode Island School of Design, Jun. 2026 \newline
     B.Sc. Bio-Mechatronics Engineering \& \newline B.A Economics, National Taiwan University (NTU), Jan 2023
     }
 \end{multicols}
+{\small I am an aspiring prototype engineer with 5+ years of experiences in developing tech products. Notable skills of mine includes:
+\begin{itemize}
+    \item Electronical: Arduino, ESP32, Raspberry Pi, System interface (I2C, SPI), sensors and actuators.
+    \item Mechanical: CAD with SolidWorks, Fusion and Pro/E Creo, rapid prototyping (CNC, FDM/STL 3D Printing)
+    \item Software: 
+    \item Concept generation: Rhino, Keyshot, Figma (Wireframing), Adobe Suite
+\end{itemize}}
     %\section*{Publication}
-    \subsection*{E-Lab Research Assistant, RISD Industrial Design, Feb. 2024 - present}
+    \subsection*{Graduate Instructor, RISD Co-Works Lab, Sep. 2024 -  \hfill Providence, RI}
         {\sffamily
+        %UX survey, mechanics design
         \begin{itemize}
-            \item I hosted workshops in several introductory electronics topics like soldering, basic circuit design and Arduino/ESP32 etc.
+            \item 
+        \end{itemize}
+        }
+    \subsection*{Apprentice, Google Hardware Product Sprint, Jun. - Sep. 2024\hfill Taipei, Taiwan}
+        {\sffamily \small
+        %UX survey, mechanics design
+        \begin{itemize}
+            \item Our team of 5 members designed a HasS lost and found platform for public facilities including a kiosk capable of identifying and storing lost objects and accompanying software service to help people search for their lost items.
+        \end{itemize}
+        }
+    \subsection*{E-Lab Research Assistant, RISD Industrial Design, Feb. 2024 -  \hfill Providence, RI}
+        {\sffamily \small
+        \begin{itemize}
+            \item I hosted workshops in topics like electronics circuit design, Arduino/ESP32, RESTful API and web backend development and mobile app development.
             I also work with course teachers to host specific workshops that tailors to their course needs.
             \item I manage the inventory of various components in the E-Lab.
         \end{itemize}
         }
-    \subsection*{TeleSHift: Telexisting TUI for Physical Collaboration \& Interaction}
-    {\sffamily
-    {\footnotesize Andrew Chen, Tzu-Ling Yang, Shu-Yan Cheng, \textbf{Po-Sheng Cheng}, Tzu-Han Lin, and Kaiyuan Lin. 2022. This work recieved the \textbf{Best Demo Award at Ubicomp/ISWC 2022 Conference}%, September 11-15, 2022, Cambridge, United Kingdom. ACM, New York, NY, USA, 4 pages. 
+    \subsection*{(Publication) TeleSHift: Telexisting TUI for Physical Collaboration \& Interaction}
+    {\sffamily \small
+    {\scriptsize Andrew Chen, Tzu-Ling Yang, Shu-Yan Cheng, \textbf{Po-Sheng Cheng}, Tzu-Han Lin, and Kaiyuan Lin. 2022. This work recieved the \textbf{Best Demo Award at Ubicomp/ISWC 2022 Conference}%, September 11-15, 2022, Cambridge, United Kingdom. ACM, New York, NY, USA, 4 pages. 
     , https://doi.org/10.1145/3544793.3560323}
         %\vspace*{4pt} \newline Human computer interaction
         \begin{itemize}
@@ -76,17 +97,18 @@
     % {\sffamily UI/UX, Econometrics, Machanics Design, Mechatronics, Electronics, Software Development. 
     % }
     %\begin{multicols*}{2}
-        \subsection*{Electro-mechanical Engineering Intern, Logitech, Feb. - Jun. 2022}
-        {\sffamily
+    
+        \subsection*{Electro-mechanical Engineering Intern, Logitech, Feb. - Jun. 2022\hfill Hsinchu, Taiwan}
+        {\sffamily \small
         %UX survey, mechanics design
         \begin{itemize}
             \item I interviewed 50 students to understand their needs for gaming keyboard and identified an opportunity for innovation then designed three prototypes to demonstrate it.
-            \item I designed a microcontroller circuit to control a stepper motor and a self-designed electromagnet. Besides, my skills in statistics with R for the UX survey, modeling with Creo and SLA/FDM prototyping were also demonstrated.
+            \item I designed a Arduino microcontroller circuit to control a stepper motor and a electromagnet. Besides, my skills in statistics with R for the UX survey, modeling with Creo and SLA/FDM prototyping were also demonstrated.
             \item I gained strong familiarity with NPI (New Product Introduction) process in the tech industry while collaborating with many departments (PM, EE, ID) in the company.
         \end{itemize}
         }
-        \subsection*{College Student Researcher, NTU, Jul. 2021 - Feb. 2022}
-        {\sffamily
+        \subsection*{College Student Researcher, NTU, Jul. 2021 - Feb. 2022\hfill Taipei, Taiwan}
+        {\sffamily \small
         %Software development, system integration
         \begin{itemize}
             \item I developed a novel spectral mapping system that integrates several electrical/optical components like imaging sensors (EMCCD) with LabVIEW and C++. %\newline \href{https://bencer3283.github.io/experiences/collegeStudentResearch/}{\underline{Details linked here.}}
@@ -94,8 +116,8 @@
             \item By being involved in several research projects in the institute, I was able to understand the needs and bottleneck of existing workflow and to develop a one-stop, integrated solution.
             \item I was awarded the \textbf{2021 Technology Innovation Award} by CCMS, NTU and \textbf{College Student Research Creativity Award} by National Science and Technology Council of Taiwan (USD\$660) with this project.
         \end{itemize}}
-        \subsection*{Project Lead, Bio-Electromagnetics Laboratory, NTU, May. 2020 - Jul. 2022}
-        {\sffamily
+        \subsection*{Project Lead, Bio-Electromagnetics Laboratory, NTU, May. 2020 - Jul. 2022\hfill Taipei, Taiwan}
+        {\sffamily \small
         %Electrical system integration, mechanics design
         \begin{itemize}
             \item I designed an IoT machine to monitor the amount of bugs in farm fields including its microcontroller PCB and mechanics.
