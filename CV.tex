@@ -26,7 +26,7 @@
 % \setmonofont{Roboto Mono}
 % \XeTeXlinebreaklocale "zh"             %這兩行一定要加，中文才能自動換行
 % \XeTeXlinebreakskip = 0pt plus 1pt     %這兩行一定要加，中文才能自動換行
-\renewcommand{\baselinestretch}{0.8}
+\renewcommand{\baselinestretch}{0.9}
 % \renewcommand{\figurename}{圖}
 % \renewcommand{\tablename}{表}
 % \renewcommand{\abstractname}{摘要}
@@ -55,10 +55,8 @@
 %{\small \noindent I am an aspiring prototype engineer with 5 years of experiences across a wide range of products.}
 \subsection*{Notable Skills}
 { \small \begin{itemize}
-    \item Electronics: STM32, Arduino, ESP32, Raspberry Pi, system interface (I2C, SPI, UART), PCB design (Altium)
-    \item Mechanical: CAD (SolidWorks, Fusion, CFD and Creo), rapid prototyping (FDM/SLA 3D Printing)
-    \item Coding: C/C++, JavaScript (Express, React), Dart (Flutter), Python (PyTorch, NumPy), Git, Linux, LabVIEW
-    \item Design: Rhino, Keyshot, Figma (Wireframing), Adobe Suite
+    \item Coding: JavaScript (Express, React, MangoDB, Node.js), HTML (CSS), Mobile App (Flutter), C/C++, Python (PyTorch), Git
+    \item Design: Figma (Wireframing), Adobe Suite, Rhino, Keyshot
 \end{itemize}}
     \section*{Experiences}
     % \subsection*{Graduate Instructor, RISD Co-Works Lab, Sep. 2024 -  \hfill Providence, RI}
@@ -68,45 +66,43 @@
     %         \item 
     %     \end{itemize}
     %     }
-    \subsection*{Research Assistant, RISD (directed by Prof. Peter Yeadon), Aug. 2024 - \hfill Providence, RI}
-        { \small
-        \begin{itemize}
-            \item Designed and prototyped a patent-pending atmospheric water generator that can generate 500ml of water from air in 24 hours, including its mechanical structure, thermal managment and power circuit.
-            \item Implemented a thermal and air flow simulation in Autodesk CFD to inform the design parameters of the prototype, opening up the possiblity of a architecture-scale application.
-        \end{itemize}
-        }
-    \subsection*{Apprentice, Google Hardware Product Sprint, Jun. - Sep. 2024\hfill Taipei, Taiwan}
+    % \subsection*{Research Assistant, RISD (directed by Prof. Peter Yeadon), Aug. 2024 - \hfill Providence, RI}
+    %     { \small
+    %     \begin{itemize}
+    %         \item Designed and prototyped a patent-pending atmospheric water generator that can generate 500ml of water from air in 24 hours, including its mechanical structure, thermal managment and power circuit.
+    %         \item Implemented a thermal and air flow simulation in Autodesk CFD to inform the design parameters of the prototype, opening up the possiblity of a architecture-scale application.
+    %     \end{itemize}
+    %     }
+    \subsection*{Product Development Apprentice, Google, Jun. - Sep. 2024\hfill Taipei, Taiwan}
         { \small
         %UX survey, mechanics design
         \begin{itemize}
-            \item Led a team of 5 to design a Hardware as a Service platform for managing lost items in public facilities. Laid out the system architecture for both the hardware kiosk and the web services.
-            \item My prototypes of a microcontroller-based hardware, a mobile app and a RESTful API service drove the development direction from a single hardware product to a integrated platform.
+            \item Led a team of 5 to design a \href{https://bencer3283.github.io/portfolio/nexus/}{\underline{Hardware as a Service platform}} for managing lost items in public facilities. Created multiple app prototypes to drive the scope from a single product to a hollistic platform. 
+            \item Using React, I built and deployed web apps that interface with several public HTTP service like Notion API and Imgur.
         \end{itemize}
         }
-    % \subsection*{E-Lab Research Assistant, RISD Industrial Design, Feb. 2024 -  \hfill Providence, RI}
-    %     { \small
-    %     \begin{itemize}
-    %         \item Fostered literacy of technology in RISD by working with professors and department leaders to design devices and curriculums in topics like electronics circuit, Arduino/ESP32, RESTful API and web backend development and mobile app development.
-    %     \end{itemize}
-    %     }
+    \subsection*{E-Lab Research Assistant, RISD Industrial Design, Feb. 2024 -  \hfill Providence, RI}
+        { \small
+        \begin{itemize}
+            \item Fostered literacy of technology in RISD by working with departmental leaders to host workshops in topics like RESTful API, Node.js backend and mobile app development.
+        \end{itemize}
+        }
     \subsection*{Electro-mechanical Engineering Intern, Logitech, Feb. - Jun. 2022\hfill Hsinchu, Taiwan}
         { \small
         %UX survey, mechanics design
         \begin{itemize}
-            \item Created a brand new breed of keyboard technology by conducting quantitative user research with 50 interviewees and innovating a microcontroller-based prototype to control actuators like stepper motor and electromagnet. Also lots of CAD (Creo) and SLA/FDM prototyping on the mechanical design. 
-            \item The prototype recieved widespread praise across many departments (pm, engineering, design) in the company while I worked with them to support guiding the direction of the development. 
+            \item Created a brand new breed of keyboard technology by conducting quantitative user research with 50 interviewees and innovating a microcontroller-based prototype.
         \end{itemize}
         }
     \subsection*{(Publication) TeleSHift: Telexisting TUI for Physical Collaboration \& Interaction}
     { \small
-    {\scriptsize 
+    %{\scriptsize 
     %Andrew Chen, Tzu-Ling Yang, Shu-Yan Cheng, \textbf{Po-Sheng Cheng}, Tzu-Han Lin, and Kaiyuan Lin. 2022. 
-    This work recieved the \textbf{Best Demo Award at Ubicomp/ISWC 2022 Conference}%, September 11-15, 2022, Cambridge, United Kingdom. ACM, New York, NY, USA, 4 pages. 
-    , https://doi.org/10.1145/3544793.3560323}
+    %This work recieved the \textbf{Best Demo Award at Ubicomp/ISWC 2022 Conference}%, September 11-15, 2022, Cambridge, United Kingdom. ACM, New York, NY, USA, 4 pages. 
+    %, https://doi.org/10.1145/3544793.3560323}
         %\vspace*{4pt} \newline Human computer interaction
         \begin{itemize}
-            \item Utilized microcontroller, potentiometers, DC motors and touch sensors to implement a shape-transforming device with a 3D tangible user interface that enabled this work to be awarded at ACM Ubicomp conference.
-            \item Designed the robust interactive mechanisms (SolidWorks). My design for manufacturability (DFM) improvements also slashed assembling time by 80\% during demo.
+            \item Designed and prototyped an innovating 3D tangible user interface that was awarded at 2022 ACM Ubicomp conference.
         \end{itemize}
         }
     %\section*{Experiences
@@ -121,20 +117,36 @@
         { \small
         %Software development, system integration
         \begin{itemize}
-            \item Developed a novel, integrated spectral mapping system that vastly accelerates scientific spectral measurement by being involved in research projects to understand the bottleneck of existing workflow.
+            % \item Developed a novel, integrated spectral mapping system that vastly improves the workflow of spectral measurement by being involved in research projects to understand the existing bottleneck.
             %integrates several electrical/optical components like imaging sensors (EMCCD) with LabVIEW and C++. %\newline \href{https://bencer3283.github.io/experiences/collegeStudentResearch/}{\underline{Details linked here.}}
-            \item By using linear dispersion optics and optimizing the EMCCD readout algorithm in LabVIEW and C++, the scanning time was reduced by 26\%.
+            \item Built a one-stop, from-acquire-to-analysis solution to improve the user experience of scientific spectral measurement.
             \item Awarded the \textbf{2021 Technology Innovation Award} by CCMS, NTU and \textbf{College Student Research Creativity Award} by National Science and Technology Council of Taiwan with this project.
         \end{itemize}}
-        \subsection*{Project Lead, Bio-Electromagnetics Laboratory, NTU, May. 2020 - Jul. 2022\hfill Taipei, Taiwan}
-        { \small
-        %Electrical system integration, mechanics design
-        \begin{itemize}
-            \item Designed an device to monitor the amount of insects in farm fields including a custom PCB with wireless capabilities and rigorous mechanisms.
-            %\item Created a git-based collaboration workflow for SolidWorks and a Notion-based BOM managment system to help me track quotes from vendors as well as the changes in design.
-            %\item Technical aspect involved industrial automation, IoT with Arduino (XBee), PCB design (Altium), SolidWorks and MySQL.
-        \end{itemize}
-        }
+        % \subsection*{Project Lead, Bio-Electromagnetics Laboratory, NTU, May. 2020 - Jul. 2022\hfill Taipei, Taiwan}
+        % { \small
+        % %Electrical system integration, mechanics design
+        % \begin{itemize}
+        %     \item Designed an device to monitor the amount of insects in farm fields including a custom PCB with wireless capabilities and rigorous mechanisms.
+        %     %\item Created a git-based collaboration workflow for SolidWorks and a Notion-based BOM managment system to help me track quotes from vendors as well as the changes in design.
+        %     %\item Technical aspect involved industrial automation, IoT with Arduino (XBee), PCB design (Altium), SolidWorks and MySQL.
+        % \end{itemize}
+        % }
+
+\section*{Projects}
+\subsection*{\href{https://bencer3283.github.io/portfolio/pagemate/}{\underline{PageMate smart bookmark}}}
+{\small
+\begin{itemize}
+    \item Built the physical prototype and web service of a smart bookmark that can display reading progress of the user's ebooks.
+    \item Using Figma to create a demo experience that can be updated in real time using my Node.js web service.
+\end{itemize}
+}
+\subsection*{\href{https://photographic-gallery-of-posheng.netlify.app}{\underline{My online photography gallery}}}
+{\small
+\begin{itemize}
+    \item Designed, built and deployed an online web app that showcases my photograpy works with a responsive, sophiscated user interface.
+    \item The app interfaces with Google Drive API to automatically load contents.
+\end{itemize}
+}
         
         
 \end{document}
