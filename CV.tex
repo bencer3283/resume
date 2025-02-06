@@ -1,5 +1,5 @@
 \documentclass[12pt]{article}
-\usepackage[a4paper, total={19cm,27cm}]{geometry}
+\usepackage[a4paper, total={19cm,28cm}]{geometry}
 \usepackage{titlesec}
 \usepackage{graphicx}
 \usepackage{float}
@@ -56,7 +56,7 @@
 \subsection*{Notable Skills}
 { \small \begin{itemize}
     \item Coding: C/C++, JavaScript (React, Express, MangoDB), Dart (Flutter), Python (PyTorch, NumPy), Git, Linux
-    \item Electronics: STM32, Arduino, ESP32, Raspberry Pi, system interface (I2C, SPI, UART), PCB design (Altium)
+    \item Electronics: PCB design (Altium), STM32, ESP32, Raspberry Pi, system interface (I2C, SPI, UART)
     \item Mechanical: CAD (SolidWorks, Fusion, CFD and Creo), rapid prototyping (FDM/SLA 3D Printing)
     \item Design: Rhino, Keyshot, Figma (Wireframing), Adobe Suite
 \end{itemize}}
@@ -83,30 +83,18 @@
             \item My prototypes of a Raspberry Pi and ESP32-based hardware, a mobile app and a RESTful API service drove the development direction from a single hardware product to an integrated platform.
         \end{itemize}
         }
-    \subsection*{E-Lab Research Assistant, RISD Industrial Design, Feb. 2024 -  \hfill Providence, RI}
-        { \small
-        \begin{itemize}
-            \item Fostered literacy of technology in RISD by working with departmental leaders to design devices and curriculums in topics like electronics circuit, Arduino/ESP32, RESTful API and web backend development and mobile app development.
-        \end{itemize}
-        }
+    % \subsection*{E-Lab Research Assistant, RISD Industrial Design, Feb. 2024 -  \hfill Providence, RI}
+    %     { \small
+    %     \begin{itemize}
+    %         \item Fostered literacy of technology in RISD by working with departmental leaders to design devices and curriculums in topics like electronics circuit, Arduino/ESP32, RESTful API and web backend development and mobile app development.
+    %     \end{itemize}
+    %     }
     \subsection*{Electro-mechanical Engineering Intern, Logitech, Feb. - Jun. 2022\hfill Hsinchu, Taiwan}
         { \small
         %UX survey, mechanics design
         \begin{itemize}
             \item Created a brand new breed of keyboard technology by conducting quantitative user research with 50 interviewees and innovating a microcontroller-based prototype to control actuators like stepper motor and electromagnet. Also lots of CAD (Creo) and SLA/FDM prototyping on the mechanical design. 
             \item The prototype recieved widespread praise across many departments (pm, engineering, design) in the company while I worked with them to support guiding the direction of the development. 
-        \end{itemize}
-        }
-    \subsection*{(Publication) TeleSHift: Telexisting TUI for Physical Collaboration \& Interaction}
-    { \small
-    {\scriptsize 
-    %Andrew Chen, Tzu-Ling Yang, Shu-Yan Cheng, \textbf{Po-Sheng Cheng}, Tzu-Han Lin, and Kaiyuan Lin. 2022. 
-    This work recieved the \textbf{Best Demo Award at Ubicomp/ISWC 2022 Conference}%, September 11-15, 2022, Cambridge, United Kingdom. ACM, New York, NY, USA, 4 pages. 
-    , https://doi.org/10.1145/3544793.3560323}
-        %\vspace*{4pt} \newline Human computer interaction
-        \begin{itemize}
-            \item Utilized ESP32 microcontroller, potentiometers, DC motors and touch sensors to implement a shape-transforming device with a 3D tangible user interface that enabled this work to be awarded at ACM Ubicomp conference.
-            \item Designed the robust interactive mechanisms (SolidWorks). My design for manufacturability (DFM) improvements also slashed assembling time by 80\% during demo.
         \end{itemize}
         }
     
@@ -122,8 +110,10 @@
         { \small
         %Software development, system integration
         \begin{itemize}
-            \item Built a one-stop, from-acquire-to-analysis solution to improve the user experience of scientific spectral measurement. Mapped existing bottlenecks by being involved in research projects in spectral mapping. 
+            \item Developed a novel, integrated spectral mapping system that vastly accelerates scientific spectral measurement.
+            % by being involved in research projects to understand the bottleneck of existing workflow.
             %integrates several electrical/optical components like imaging sensors (EMCCD) with LabVIEW and C++. %\newline \href{https://bencer3283.github.io/experiences/collegeStudentResearch/}{\underline{Details linked here.}}
+            \item By using linear dispersion optics and optimizing the EMCCD readout algorithm in LabVIEW and C++, the scanning time was reduced by 26\%.
             \item Awarded the \textbf{2021 Technology Innovation Award} by CCMS, NTU and \textbf{College Student Research Creativity Award} by National Science and Technology Council of Taiwan with this project.
         \end{itemize}}
         % \subsection*{Project Lead, Bio-Electromagnetics Laboratory, NTU, May. 2020 - Jul. 2022\hfill Taipei, Taiwan}
@@ -139,14 +129,14 @@
         \subsection*{\href{https://bencer3283.github.io/portfolio/mitm/}{\underline{MITM Router}}}
         {\small
         \begin{itemize}
-            \item Conceptulized and built a WIFI router that brings physical, tactile responses to the user's internet usage.
-            \item Extensive prototyping and user testing of the physical user interface was performed to make critical design decisions.
+            \item Built a WIFI router that brings physical, tactile interactions to the user's internet usage with Linux networking stack on a Raspberry Pi.
+            \item Extensive prototyping and user testing of the physical user interface was done using several sensors/actuators on a RP2040 microcontroller.
         \end{itemize}
         }
         \subsection*{\href{https://bencer3283.github.io/portfolio/pagemate/}{\underline{PageMate smart bookmark}}}
 {\small
 \begin{itemize}
-    \item Built the physical prototype and web service of a smart bookmark that can display reading progress of the user's ebooks.
+    \item Built the physical prototype with advanced touch gesture sensing on ESP32 and the Node.js web service of a smart bookmark that can display reading progress of the user's ebooks.
     \item Using Figma to create a demo experience that can be updated in real time using my Node.js web service.
 \end{itemize}
 }
@@ -159,8 +149,8 @@
     %, https://doi.org/10.1145/3544793.3560323}
         %\vspace*{4pt} \newline Human computer interaction
         \begin{itemize}
-            \item Designed and prototyped a 3D tangible user interface that was awarded at 2022 ACM Ubicomp conference.
-            \item Designed the robust interactive mechanisms (SolidWorks) and the microcontroller-based prototype. My design for manufacturability (DFM) improvements also slashed assembling time by 80\% during demo.
+            \item Utilized ESP32, potentiometers, DC motors and touch sensors to implement a shape-transforming device with a 3D tangible user interface that enabled this work to be awarded at 2022 ACM Ubicomp conference.
+            \item Designed the robust interactive mechanisms (SolidWorks). My design for manufacturability (DFM) improvements also slashed assembling time by 80\% during demo.
         \end{itemize}
         }
         
